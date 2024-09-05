@@ -1,3 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --Gray700: hsl(0, 0%, 20%);
+    --Gray800: hsl(0, 0%, 12%);
+    --Gray900: hsl(0, 0%, 8%);
+}
+
+html, body {
+	height: 100%;
+}
+
 body {
-	background-color: blue;
+	max-width: 1440px;
+	background-color: var(--Gray900);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+p {
+	font-size: 14px;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	margin: auto;
+	border-radius: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: var(--Gray800);
+}
+
+#picture-profile {
+	width: 100%;
+	margin: 25px auto;
+}
+
+#picture-profile img{
+	border-radius: 200px;
+	width: 25%;
+	margin: 0 auto;
+}
+
+#profile {
+	width: 100%;
+	text-align: center;
+}
+
+#profile h1 {
+	color: var(--white);
+	font-weight: 700;
+}
+
+#profile p {
+	margin: 8px auto;
+	color: var(--green);
+	font-weight: 600;
+}
+
+#description {
+	width: 100%;
+	text-align: center;
+	margin: 6px auto;
+	margin-top: 18px;
+	color: var(--white);
+	font-weight: 400;
+}
+
+#links {
+	width: 100%;
+}
+
+#links ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+#links li {
+	width: 75%;
+	margin: 4% auto;
+	padding: 3%;
+	border-radius: 8px;
+	background-color: var(--Gray700);
+	color: var(--white);
+	font-weight: 600;
+}
+
+#links li:hover {
+	background-color: var(--green);
+	color: var(--Gray700);
+	cursor: pointer;
+}
+
+#links li a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+#footer {
+	margin-bottom: -10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: var(--Gray700);
+}
+
+
+
+
+@media (max-width: 960px) {
+	#container {
+		width: 45%;
+	}
+}
+
+@media (max-width: 720px) {
+	#container {
+		width: 55%;
+	}
+}
+
+@media (max-width: 540px) {
+	#container {
+		width: 70%;
+	}
+}
+
+@media (max-width: 375px) {
+	#container {
+		width: 85%;
+	}
 }
